@@ -65,7 +65,7 @@
         }
         follows[fCount]= name;
         fCount++;
-        return false;
+        return true;
     }
 
     /** Removes the given name from the follows list of this user. If successful, returns true.
@@ -85,6 +85,7 @@
         {
             follows[j] = follows[j+1];
         }
+        follows[fCount]= null;
         return true;
     }
 
